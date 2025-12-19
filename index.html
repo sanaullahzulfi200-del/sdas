@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Recommendation Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="left-panel">
+        <h2 class="heading">Filters & AI</h2>
+
+        <div class="panel-card">
+
+            <label>Fuel Type</label>
+            <select id="fuel">
+                <option value="">Any</option>
+                <option>Petrol</option>
+                <option>Hybrid</option>
+                <option>Electric</option>
+            </select>
+
+            <label>Price Range (PKR)</label>
+            <input id="minPrice" type="number" placeholder="Min Price">
+            <input id="maxPrice" type="number" placeholder="Max Price">
+
+            <div class="radio-group">
+                <label>Car Condition</label>
+                <label><input type="radio" name="condition" value="New"> New</label>
+                <label><input type="radio" name="condition" value="Used"> Used</label>
+            </div>
+
+            <label>Usage Type</label>
+            <select id="usage">
+                <option value="">Any</option>
+                <option>Daily Usage</option>
+                <option>Family Trips</option>
+                <option>Office</option>
+                <option>Off-Roading</option>
+                <option>Long Trips</option>
+                <option>Student</option>
+                <option>Sports</option>
+                <option>Ride-Sharing</option>
+            </select>
+
+            <label>Seating Capacity</label>
+            <select id="seats">
+                <option value="">Any</option>
+                <option>2 Seater</option>
+                <option>4 Seater</option>
+                <option>5 Seater</option>
+                <option>7 Seater (SUV)</option>
+            </select>
+
+            <textarea id="aiMessage" placeholder="Ask AI about car recommendations..."></textarea>
+            <button class="submit-btn" id="aiBtn">Ask AI</button>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <h2 class="heading">Car Preview</h2>
+
+        <div class="car-images" id="carImages"></div>
+
+        <div class="message-box" id="recommendBox">
+            AI recommendation will appear here.
+        </div>
+    </div>
+</div>
+
+<script src="frontend.js"></script>
+</body>
+</html>

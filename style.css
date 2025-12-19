@@ -1,0 +1,14 @@
+body { margin:0; font-family: Arial, sans-serif; background:#111; color:#fff; }
+.container { display:flex; height:100vh; }
+.left-panel { width:35%; padding:20px; background:#222; overflow-y:auto; }
+.right-section { width:65%; padding:20px; background:#1a1a1a; overflow-y:auto; }
+.heading { font-size:20px; margin-bottom:10px; color:#ffcc00; }
+.panel-card { display:flex; flex-direction:column; gap:10px; }
+input, select, textarea, button { padding:8px; border:none; border-radius:5px; }
+textarea { resize:none; height:60px; }
+.submit-btn { background:#ffcc00; color:#111; font-weight:bold; cursor:pointer; }
+.car-images { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+.img-box { width:48%; overflow:hidden; border-radius:8px; }
+.img-box img { width:100%; display:block; transition: transform 0.3s; }
+.img-box img:hover { transform: scale(1.1); }
+.message-box { margin-top:15px; padding:10px; background:#333; border-radius:8px; min-height:60px; }
